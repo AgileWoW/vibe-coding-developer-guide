@@ -7,6 +7,8 @@ Official developer resource for [aidevdayindia.org](https://aidevdayindia.org).
 
 In 2026, typing out boilerplate syntax is obsolete. The highest-paid software engineers are transitioning from "Code Writers" to "Code Directors" using a methodology known as **Vibe Coding**. This repository is your playbook for mastering AI-assisted Flow State Engineering.
 
+👉 **[Download the Free 2026 Vibe Coding Cheat Sheet Here](./VIBE_CODING_CHEATSHEET.md)**
+
 > 📖 **The Core Philosophy:** We are moving from "Syntax Memorization" to "Logic & Intuition." Read the foundational manifesto: [Vibe Coding 101: How AI is Replacing Syntax with Intuition](https://aidevdayindia.org/blogs/vibe-coding-ai-developer-guide/vibe-coding-ai-developer-guide.html).
 
 ---
