@@ -1,0 +1,65 @@
+# 🌊 Vibe Coding Cheat Sheet: The 2026 Developer's Workflow
+
+Welcome to the ultimate cheat sheet for **Vibe Coding**—the practice of using AI to handle syntax and boilerplate so you can focus 100% on logic, architecture, and flow state.
+
+> **Want the full system?** Read the master guide at [Vibe Coding 101: How AI is Replacing Syntax with Intuition](https://aidevdayindia.org/blogs/vibe-coding-ai-developer-guide/vibe-coding-ai-developer-guide.html).
+
+---
+
+## 🧠 1. The Core Philosophy
+* **You are the Architect, the AI is the Bricklayer:** Never let the AI decide the system architecture. You define the "what" and "why"; the AI types the "how."
+* **Context is King:** Prompt engineering is dead; **Context Engineering** is the new standard. The quality of your output depends entirely on the files, docs, and state you feed the AI.
+* **Read > Write:** You will spend 20% of your time prompting and 80% of your time reading and auditing the AI's diffs. Develop your "taste" for good code.
+
+---
+
+## ✍️ 2. The "Vibe" Prompting Formula
+
+To stop the AI from hallucinating, use the **C.I.C.S. Framework** when using tools like Cursor Composer or Copilot Edits:
+
+1. **Context:** What are we working on? (e.g., *"Looking at `@auth.ts` and `@userStore.ts`..."*)
+2. **Intent:** What is the specific goal? (e.g., *"We need to implement a JWT refresh token loop."*)
+3. **Constraints:** What must the AI avoid? (e.g., *"Do not use external libraries. Stick to native fetch API."*)
+4. **Style:** How should it look? (e.g., *"Use early returns, strict TypeScript typing, and separate the error handling."*)
+
+### ❌ The "Typist" Prompt (Bad)
+> *"Write a login function for my React app."* (Result: Generic, unscalable boilerplate).
+
+### ✅ The "Architect" Prompt (Good)
+> *"Using `@api.ts`, create a login mutation hook. If the response is 401, trigger the `logout()` function from `@store.ts`. Ensure all inputs are validated using our Zod schema in `@schema.ts`. Do not rewrite the existing UI components."*
+
+---
+
+## ⌨️ 3. Essential IDE Shortcuts (2026 Standards)
+
+### Cursor AI (The Vibe King)
+* `Cmd/Ctrl + K`: **Inline Edit.** Highlight code and tell the AI exactly how to alter that specific block.
+* `Cmd/Ctrl + L`: **Chat with Codebase.** Ask questions about your entire repo (e.g., *"Where do we handle Stripe webhooks?"*).
+* `Cmd/Ctrl + I`: **Composer (Multi-file).** The ultimate vibe coding tool. Describe a massive feature and watch it edit 5 files simultaneously.
+
+### GitHub Copilot (The Speed Demon)
+* `Cmd/Ctrl + I`: **Inline Chat.** Open the floating dialogue box to refactor the current file.
+* `@workspace`: **Global Context.** Prefix your chat queries with this to force Copilot to read your entire directory, not just open tabs.
+* `/explain`: **Code Audit.** Highlight legacy code and use this slash command to instantly break down complex logic.
+
+---
+
+## 🛑 4. The "Zombie Coder" Defense (Security Audit)
+
+If you blindly press `Tab` without checking the logic, you become a "Zombie Coder." Always run this 3-step audit before committing AI code:
+
+1. **The Dependency Check:** Did the AI hallucinate a library import that doesn't exist or is deprecated?
+2. **The State Check:** Does this new function mutate global state unexpectedly?
+3. **The Edge Case Check:** The AI will write the "Happy Path." You must manually prompt it: *"Rewrite this to handle what happens if the network drops mid-request."*
+
+> 🛡️ **Learn more:** Discover how to avoid the debugging trap in our [Flow State Engineering Guide](https://aidevdayindia.org/blogs/vibe-coding-ai-developer-guide/flow-state-engineering-ai-productivity.html).
+
+---
+
+## 🛠️ 5. Recommended 2026 Tech Stack
+* **Coding Model:** **Claude 3.5 Sonnet** (Currently holds the highest SWE-bench score for logical adherence without syntax hallucinations).
+* **IDE:** **Cursor** (For deep local indexing) or **Windsurf/Google Antigravity** (Endorsed by Linus Torvalds for hobby projects).
+* **Terminal:** **Warp** (AI-integrated terminal to debug bash and server errors instantly).
+
+---
+*Brought to you by the engineering strategy team at [AI Dev Day India](https://aidevdayindia.org). For more insights on the transition from syntax to intuition, read: [Is Syntax Dead? Junior Dev Skills for 2026](https://aidevdayindia.org/blogs/vibe-coding-ai-developer-guide/syntax-vs-intuition-junior-dev-skills.html).*
